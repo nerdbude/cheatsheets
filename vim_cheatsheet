@@ -1,0 +1,52 @@
++------- vim cheatsheet ---------+
+
++--------------------------------+ +----------+
+| TEXT MANIPULATION              | |  CURSOR  |
++--------------------------------+ +----------+
+| i  - insert before cursor      | | H - left |
+| I  - insert at start of line   | | J - down |
+| a  - insert after cursor       | | K - up   |
+| A  - insert at end of line     | | L - right|
+| o  - add new line below cursor | +----------+
+| O  - add new line above cursor |
+| ea - insert at end of line     | +-----------------+
+| r  - replace single character  | | CHANGE MODE     |
+| cc - replace line              | +-----------------+
+| cw - replace to  end of word   | | ESC - EXIT MODE |
+| c$ - replace to end of line    | +-----------------+
+| s  - substitute character      |
+| S  - substitute line           | +----------------------------+ +----------------------------------------+
+| u  - undo                      | | SAVE AND EXIT              | |          OTHER COMMANDS                |
+| ctrl - redo                    | +----------------------------+ +----------------------------------------+
++--------------------------------+ | ZZ  - save and quit        | | :ls      -  list open files            |
+                                   | ZQ  - Quit without saving  | | :b path  -  jmp to file (Tab complete) |
++--------------------------------+ | :w  - write/save           | | :bn      -  jmp to file n     	   |
+| VISUAL MODE                    | | :q  - quit                 | | :bn      -  jmp to next file           |
++--------------------------------+ | :wq - write and quit       | | :bp      -  jmp to previous file       |
+| v - enter visual mode          | | :x  - write and quit       | | :bd      -  delete file from buffer    |
+| V - enter linewise visual mode | | :q! - forcequit no saving  | | :e       -  edit file   	   	   | 
+| ctrl - start visual block mode | | :qa - quit all vim buffers | | :enew    -  open blank new file        |
+| > - shift text left            | +----------------------------+ | :sp      -  horizontal split window    |
+| < - shift text right           |    				  | :vs      -  vertical split window      |
+| > > - shift left by shiftwidth | +----------------------------+ | :!       -  exec external terminal     | 
+| < < - shift right by shiftwidth| |   SYNTAX HIGHLIGHTING      | | :on      -  close all except current   | 
+| = = - auto-ident line          | +----------------------------+ +----------------------------------------+
+| ~ - change case                | | :syntax on - enable HL     |
++--------------------------------+ | :set number - line numbers |
+                                   +----------------------------+  
++--------------------------------+
+|  MANIPULATE CONTENT            | +----------------------------+
++--------------------------------+ |        COLOR SHEMES        |
+| y  - yank/copy                 | +----------------------------+
+| yy - yank a line               | | :colo  - Select Scheme     |
+| yw - yank a word               | |       blue                 |
+| y$ - yank to end of line       | |       darkblue             | 
+| p  - paste after cursor        | |       default   		| 
+| P  - paste before cursor       | |	   evening 		| 
+| dd - delete / cut line         | |	   morning		| 
+| dw - delete a word             | |       murphy 		|
+| D  - delete to end of line     | |       shine		| 
+| x  - delete character          | |    			| 
+| /string - search for string    | +----------------------------+
++--------------------------------+
+ 
