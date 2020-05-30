@@ -1,0 +1,41 @@
++--------------------+
+|   GIT CHEATSHEET   |
++--------------------+
+
++----------+
+|  BASICS  |
++----------+
+
+git status		// show status of files to push / remove / commit etc
+git init		// Start repository in current folder
+git add file.txt	// add file to the list 
+git push 		// push files to branch / master
+
+
++----------+
+|  COMMIT  |
++----------+
+
+git commit 		// open standard editor to add commit message for all files that will be pushed
+git commit -m "message"	// add "message" as commit message to files 
+  	
+
++----------+
+|  GITHUB  |
++----------+
+
+git remote add origin https://github.com/nerdbude/repo.git	// use github repository 
+git push -u origin master					// push files to github
+
++-----------------------+
+|  START A GITHUB REPO  |
++-----------------------+
+
+1. mkdir foldername
+2. cd foldername
+3. vim README.md
+4. git init
+5. git add README.md
+6. commit -m "first commit"
+7. remote add origin https://www.github.com/nerdbude/repo.git
+8. push -u origin master
