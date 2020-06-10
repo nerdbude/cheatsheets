@@ -6,20 +6,48 @@
 |  BASICS  |
 +----------+
 
-git status		// show status of files to push / remove / commit etc
-git init		// Start repository in current folder
-git add file.txt	// add file to the list 
-git push 		// push files to branch / master
+git init			// initialize repository in current folder
+git clone https://		// clone repository
+git add file.txt		// add file to staging area 
+git status			// show status of files to push / remove / commit etc
 
+git diff			// show unstaged changes
+git diff file.txt 		// show unstaged changes in file.txt
+
+git log				// show all commits
+
+git push 			// push files to branch / master
+
++----------+
+|  BRANCH  |
++----------+
+
+git branch <new_branch> 	// create a new branch 
+git branch <new_branch> 7f5ac24 // create a new branch based on commit
+git branch <new_branch> 1.0	// create a new branch based on tag
+git branch -d <branch_name>	// delete branch
+
++--------+
+|  TAGS  |
++--------+
+
+git tag 			// display all tags
+git tag <tagname> <commit-id>	// add tag to commit
+
++---------+
+|  RESET  |
++---------+
+
+git reset 			// unstage all files
+git reset file.txt		// unstage file.txt
 
 +----------+
 |  COMMIT  |
 +----------+
 
-git commit 		// open standard editor to add commit message for all files that will be pushed
-git commit -m "message"	// add "message" as commit message to files 
+git commit 			// open standard editor to add commit message for all files that will be pushed
+git commit -m "message"		// add "message" as commit message to files 
   	
-
 +----------+
 |  GITHUB  |
 +----------+
